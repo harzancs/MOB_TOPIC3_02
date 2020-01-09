@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyFeedData2</string>
+    <string name="tab_text_1">Product</string>
+    <string name="tab_text_2">Stock</string>
+    <string name="title_product">Product</string>
+    <string name="title_stock">Stock</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
