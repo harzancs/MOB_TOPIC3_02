@@ -14,6 +14,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import static myapp.csit.nonball.myfeeddata2.Bean.ProductBean.BASE_URL;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -34,7 +36,14 @@ public class FeedProductFragment extends Fragment {
         mRecycleview = (RecyclerView) _view.findViewById(R.id.recycleview);
         mRecycleview.setLayoutManager(new GridLayoutManager(getContext(), 2));
         mRecycleview.setAdapter(new CustomRecyclerView());
+
+        feedData();
+
         return _view;
+    }
+
+    private void feedData() {
+        new FeedAsyn().execute(BASE_URL + "query.php");
     }
 
     private class CustomRecyclerView extends RecyclerView.Adapter<ViewHolder> {
