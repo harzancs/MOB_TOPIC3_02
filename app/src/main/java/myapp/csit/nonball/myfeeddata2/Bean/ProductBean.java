@@ -1,6 +1,9 @@
 package myapp.csit.nonball.myfeeddata2.Bean;
 
-public class ProductBean {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class ProductBean implements Parcelable {
 
     /**
      * id : 1
@@ -67,4 +70,44 @@ public class ProductBean {
     public void setImage_url(String image_url) {
         this.image_url = image_url;
     }
+
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(this.id);
+        dest.writeString(this.id_product);
+        dest.writeString(this.name);
+        dest.writeString(this.detail);
+        dest.writeString(this.price);
+        dest.writeString(this.image_url);
+    }
+
+    public ProductBean() {
+    }
+
+    protected ProductBean(Parcel in) {
+        this.id = in.readString();
+        this.id_product = in.readString();
+        this.name = in.readString();
+        this.detail = in.readString();
+        this.price = in.readString();
+        this.image_url = in.readString();
+    }
+
+    public static final Parcelable.Creator<ProductBean> CREATOR = new Parcelable.Creator<ProductBean>() {
+        @Override
+        public ProductBean createFromParcel(Parcel source) {
+            return new ProductBean(source);
+        }
+
+        @Override
+        public ProductBean[] newArray(int size) {
+            return new ProductBean[size];
+        }
+    };
 }
