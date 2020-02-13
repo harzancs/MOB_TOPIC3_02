@@ -113,7 +113,7 @@ public class FeedStockFragment extends Fragment {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(getActivity(), EditActivity.class);
-                    intent.putExtra("product_bean", "" + (ProductBean) edit.getTag(R.id.editBTN));
+                    intent.putExtra("product_bean",  (ProductBean) edit.getTag(R.id.editBTN));
                     startActivity(intent);
                 }
             });

@@ -34,7 +34,7 @@ public class EditActivity extends AppCompatActivity {
 
         bindWidget();
         setupEventWidget();
-        setupToolbar();
+//        setupToolbar();
     }
 
     private void bindWidget() {

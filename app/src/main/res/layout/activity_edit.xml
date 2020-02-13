@@ -18,62 +18,39 @@
     <androidx.appcompat.widget.Toolbar
 
         android:id="@+id/toolbar"
-
         android:layout_width="match_parent"
-
         android:layout_height="wrap_content"
-
         android:background="?attr/colorPrimary"
-
         android:minHeight="?attr/actionBarSize"
-
         android:theme="@style/AppTheme.AppBarOverlay" />
 
 
     <ScrollView
-
         android:layout_width="match_parent"
-
         android:layout_height="match_parent"
-
         android:layout_marginLeft="8dp"
-
         android:layout_marginRight="8dp"
-
         android:background="#fff">
 
 
         <LinearLayout
-
             android:layout_width="match_parent"
-
             android:layout_height="match_parent"
-
             android:orientation="vertical"
-
             android:padding="18dp">
 
 
             <com.google.android.material.textfield.TextInputLayout
-
-
                 android:id="@+id/inputLayoutProductId"
-
                 android:layout_width="match_parent"
-
                 android:layout_height="wrap_content"
-
                 android:layout_marginTop="8dp">
 
 
                 <EditText
-
                     android:id="@+id/inputProductIdEDT"
-
                     android:layout_width="match_parent"
-
                     android:layout_height="wrap_content"
-
                     android:hint="Product ID" />
 
 
@@ -81,24 +58,16 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-
                 android:id="@+id/inputLayoutName"
-
                 android:layout_width="match_parent"
-
                 android:layout_height="wrap_content"
-
                 android:layout_marginTop="8dp">
 
 
                 <EditText
-
                     android:id="@+id/inputNameEDT"
-
                     android:layout_width="match_parent"
-
                     android:layout_height="wrap_content"
-
                     android:hint="Name" />
 
 
@@ -106,24 +75,16 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-
                 android:id="@+id/inputLayoutDetail"
-
                 android:layout_width="match_parent"
-
                 android:layout_height="wrap_content"
-
                 android:layout_marginTop="8dp">
 
 
                 <EditText
-
                     android:id="@+id/inputDetailEDT"
-
                     android:layout_width="match_parent"
-
                     android:layout_height="wrap_content"
-
                     android:hint="Detail" />
 
 
@@ -131,24 +92,16 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-
                 android:id="@+id/inputLayoutPrice"
-
                 android:layout_width="match_parent"
-
                 android:layout_height="wrap_content"
-
                 android:layout_marginTop="8dp">
 
 
                 <EditText
-
                     android:id="@+id/inputPriceEDT"
-
                     android:layout_width="match_parent"
-
                     android:layout_height="wrap_content"
-
                     android:hint="Price" />
 
 
